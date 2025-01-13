@@ -47,7 +47,7 @@ def configure_connector():
                    "table.whitelist": "stations",
                    "mode": "incrementing",
                    "incrementing.column.name": "stop_id",
-                   "topic.prefix": "org.chicago.cta.",
+                   "topic.prefix": "org.chicago.cta.", # output to input Kafka topic
                    "poll.interval.ms": "10000",
                }
            }),
