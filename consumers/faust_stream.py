@@ -34,10 +34,10 @@ class TransformedStation(faust.Record):
 app = faust.App("stations-stream", broker="kafka://localhost:9092", store="memory://")
 
 # TODO: Define the input Kafka Topic. Hint: What topic did Kafka Connect output to?
-topic = app.topic("cta.stations", value_type=Station)
+topic = app.topic("org.chicago.cta.", value_type=Station) # needs to match topic.prefix in connector.py
 
 # TODO: Define the output Kafka Topic
-out_topic = app.topic("org.chicago.cta.stations.table.v1", partitions=1)
+out_topic = app.topic(f"{topic}stations.table.v1", partitions=1) # include topic.prefix
 
 # TODO: Define a Faust Table
 table = app.Table(
