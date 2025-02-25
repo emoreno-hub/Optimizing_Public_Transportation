@@ -71,9 +71,20 @@ Optimizing Public Transportation
 | | |____ station.py
 
 ```
-## Running and Testing
-To run the simulation, you must first start up the Kafka ecosystem on their machine utilizing Docker Compose.
+## Running the Simulation
+To run the producer
+- cd producer
+- python simulation.py
 
-%> docker-compose up
+To run the Faust Stream Processing Application
+- cd consumer
+- faust -A faust_stream worker -l info
 
-Docker compose will take a 3-5 minutes to start, depending on your hardware. Please be patient and wait for the docker-compose logs to slow down or stop before beginning the simulation.
+To run the KSQL Creation Script
+- cd consumer
+- python ksql.py
+
+To run the consumer
+- cd consumer
+- python server.py
+
