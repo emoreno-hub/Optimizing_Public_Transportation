@@ -1,4 +1,4 @@
-# Project: optimizing_public_transportation
+# Project: Optimizing Public Transportation
 This project constructs a streaming event pipeline around Apache Kafka and its ecosystem. Using public data from the Chicago Transit Authority. We will construct an event pipeline around Kafka that allows us to simulate and display the status of train lines in real time.
 
 ## Project Architecture
@@ -6,7 +6,7 @@ The Chicago Transit Authority (CTA) has asked us to develop a dashboard displayi
 
 Our architecture will look like so:
 
-
+(images/diagram.png)
 
 ## Project Structure
 The project consists of two main directories, **producers** and **consumers**.
