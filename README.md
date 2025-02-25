@@ -15,3 +15,59 @@ The following directory layout indicates the files that the student is responsib
 
 The following directory layout indicates the files that the student is responsible for modifying by adding a * indicator. Instructions for what is required are present as comments in each file.
 
+```
+Optimizing Public Transportation
+|____README.md
+|____startup.sh
+|
+|____ producer
+| |____ __init__.py
+| |____ connector.py                 * Kafka Connect to Postgres
+| |____ simulation.py
+| |____ logging.ini
+| |____ requirements.txt
+| |
+| |____ data                         * Data for simulation
+| | |____ ridership_curve.csv
+| | |____ cta_stations.csv
+| | |____ README.md
+| | |____ ridership_seed.csv
+| |
+| |____ models                       * Define Kafka Producer
+| | |____ __init__.py
+| | |____ producer.py
+| | |____ station.py
+| | |____ turnstile.py
+| | |____ weather.py
+| | |____ turnstile_hardware.py
+| | |____ line.py
+| | |____ train.py
+| | |
+| | |____ schemas                    * Define Avro schema
+| | | |____ arrival_key.json
+| | | |____ arrival_value.json
+| | | |____ turnstile_key.json
+| | | |____ turnstile_value.json
+| | | |____ weather_value.json
+| | | |____ weather_key.json
+|
+|____ consumer
+| |____ __init__.py
+| |____ server.py                    * Server for running Web UI
+| |____ logging.ini
+| |____ requirements.txt
+| |____ topic_check.py
+| |____ faust_stream.py              * Using Faust to tranform station data
+| |____ consumer.py
+| |____ ksql.py                      * Using KSQL to transform turnstile data
+| |____ templates
+| | |____ status.html
+| |
+| |____ models                       * Define Kafka Consumer
+| | |____ __init__.py
+| | |____ line.py
+| | |____ weather.py
+| | |____ lines.py
+| | |____ station.py
+
+```
