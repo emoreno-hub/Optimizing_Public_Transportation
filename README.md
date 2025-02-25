@@ -6,7 +6,7 @@ The Chicago Transit Authority (CTA) has asked us to develop a dashboard displayi
 
 Our architecture will look like so:
 
-(images/diagram.png)
+![diagram](images/diagram.png)
 
 ## Project Structure
 The project consists of two main directories, **producers** and **consumers**.
