@@ -92,5 +92,5 @@ To run the consumer
 
 When the producer and consumer are running, the following URLs will be available.
 
-![URLs](URL.png)
+![URL](images/URL.png)
 
