@@ -10,10 +10,15 @@ Our architecture will look like so:
 
 ![diagram](images/diagram.png)
 
-## Project Structure
-The project consists of two main directories, **producers** and **consumers**.
 
-The following directory layout indicates the files that the student is responsible for modifying by adding a * indicator. Instructions for what is required are present as comments in each file.
+## Project Structure
+The outline for this project as follows:
+- Use REST Proxy to send events over HTTP
+- Use Kafka Connect to collect data from the Postgres database and stream them into Kafka
+- Use KSQL to combine related data models into a single topic ready for consumption for downstream analytics
+- Use the Faust Python Stream Processing library to transform train station data into a more streamlined representation
+
+The project consists of two main directories, **producers** and **consumers**.
 
 The following directory layout indicates the files that the student is responsible for modifying by adding a * indicator. Instructions for what is required are present as comments in each file.
 
