@@ -12,7 +12,7 @@ Our architecture will look like so:
 
 
 ## Project Structure
-The outline for this project as follows:
+The structure for this project as follows:
 - Use REST Proxy to send events over HTTP
 - Use Kafka Connect to collect data from the Postgres database and stream them into Kafka
 - Use KSQL to combine related data models into a single topic ready for consumption for downstream analytics
