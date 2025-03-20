@@ -2,6 +2,13 @@
 ## Project Motivation
 This project constructs a streaming event pipeline around Apache Kafka and its ecosystem. Using public data from the Chicago Transit Authority we will construct an event pipeline around Kafka that allows us to simulate and display the status of train lines in real time.  At the end of this project we will be able to monitor current weather and train status in real time as shown below.
 
+## Project Overview
+The project contains the following components:
+- Use REST Proxy to send events over HTTP
+- Use Kafka Connect to collect data from the Postgres database and stream them into Kafka
+- Use KSQL to combine related data models into a single topic ready for consumption for downstream analytics
+- Use the Faust Python Stream Processing library to transform train station data into a more streamlined representation
+
 ![CTA Status](images/CTA_Status_Page.png)
 
 ## Project Architecture
@@ -11,13 +18,6 @@ Our architecture will look like so:
 
 ![diagram](images/diagram.png)
 
-
-## Project Overview
-The project contains the following components:
-- Use REST Proxy to send events over HTTP
-- Use Kafka Connect to collect data from the Postgres database and stream them into Kafka
-- Use KSQL to combine related data models into a single topic ready for consumption for downstream analytics
-- Use the Faust Python Stream Processing library to transform train station data into a more streamlined representation
 
 ## File Structure
 The project consists of two main directories, **producers** and **consumers**.
