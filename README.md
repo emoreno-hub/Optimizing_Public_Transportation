@@ -1,4 +1,4 @@
-# Real-Time Public Transportation Monitoring Using Kafka Streaming
+# Real-Time Public Transit Monitoring with Apache Kafka
 ## Project Motivation
 This project constructs a streaming event pipeline around Apache Kafka and its ecosystem. Using public data from the Chicago Transit Authority we will construct an event pipeline around Kafka that allows us to simulate and display the status of train lines in real time.  At the end of this project we will be able to monitor current weather and train status in real time as shown below.
 
